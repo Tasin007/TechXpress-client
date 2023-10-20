@@ -1,8 +1,7 @@
 // Home.jsx
 import React, { useState, useEffect } from "react";
 import Banner from "../Component/Banner";
-import Footer from "../Component/Footer";
-import Navbar from "../Component/Navbar";
+
 import Carousel from "../Component/Carousel";
 import FAQ from "../Component/FAQ";
 import AOS from "aos";
@@ -13,7 +12,7 @@ const Home = () => {
   const [brands, setBrands] = useState([]);
 
   useEffect(() => {
-    fetch("/brands.json") // Replace with the actual path to your JSON file
+    fetch("/brands.json")
       .then((response) => response.json())
       .then((data) => setBrands(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -21,7 +20,6 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
       <Banner />
       <div className="max-w-7xl mx-auto my-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4">
         {brands.map((brand, index) => (
@@ -42,7 +40,6 @@ const Home = () => {
       </div>
       <Carousel />
       <FAQ />
-      <Footer />
     </div>
   );
 };
