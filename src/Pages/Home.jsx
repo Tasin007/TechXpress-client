@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import Banner from "../Component/Banner";
-import Footer from "../Component/Footer";
 import Carousel from "../Component/Carousel";
 import FAQ from "../Component/FAQ";
 import AOS from "aos";
@@ -44,7 +43,7 @@ const Home = () => {
       
       <Carousel />
       <FAQ />
-      <Footer /> {/* resolved conflict */}
+      
     </div>
   );
 };
