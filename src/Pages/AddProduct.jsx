@@ -23,10 +23,10 @@ const AddProduct = () => {
   const handleAddProduct = (event) => {
     event.preventDefault();
 
-    // Rest of your logic
+    
     console.log(product);
 
-    // Sending data to the server
+    
     fetch('http://localhost:5000/addproduct', {
       method: 'POST',
       headers: {
@@ -44,7 +44,7 @@ const AddProduct = () => {
             icon: 'success',
             confirmButtonText: 'Cool',
           });
-          // Reset the form after submission
+          
           setProduct({
             image: '',
             name: '',
@@ -184,7 +184,7 @@ const AddProduct = () => {
         <div className="flex justify-center">
           <button
             type="submit"
-            className="bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-5 py-2.5"
+            className="bg-blue-600 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 text-white font-medium rounded-lg text-sm px-5 py-2.5"
           >
             Add Product
           </button>
