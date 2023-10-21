@@ -1,12 +1,12 @@
 // Home.jsx
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import Banner from "../Component/Banner";
 import Footer from "../Component/Footer";
-import Navbar from "../Component/Navbar";
 import Carousel from "../Component/Carousel";
 import FAQ from "../Component/FAQ";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { Link } from "react-router-dom";
 
 AOS.init();
 const Home = () => {
@@ -21,10 +21,11 @@ const Home = () => {
 
   return (
     <div>
-      <Navbar />
       <Banner />
+      
       <div className="max-w-7xl mx-auto my-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4">
         {brands.map((brand, index) => (
+          <Link to={`/brandProduct/${brand.name}`} key={brand._id}>
           <div key={index} className="card w-96 bg-base-100 shadow-xl">
             <figure className="px-10 pt-10">
               <img
@@ -38,8 +39,10 @@ const Home = () => {
               <p>{brand.description}</p>
             </div>
           </div>
+          </Link>
         ))}
       </div>
+      
       <Carousel />
       <FAQ />
       <Footer />
