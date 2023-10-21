@@ -17,7 +17,7 @@ useEffect(() => ()=>{
 
    const handleDelete = (_id) => {
 
-        fetch(`tech-xpress-server-pj28upzsq-tasins-projects.vercel.app/myCart/${_id}`, {
+        fetch(`https://tech-xpress-server-hi68aljyl-tasins-projects.vercel.app/myCart/${_id}`, {
             method: "DELETE",
           })
             .then((res) => res.json())

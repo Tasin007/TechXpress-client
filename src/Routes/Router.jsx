@@ -39,22 +39,22 @@ const routes = createBrowserRouter([
       {
         path: "/myCart",
         element: <PrivateRoute><MyCart></MyCart></PrivateRoute>,
-        loader: () => fetch(`tech-xpress-server-pj28upzsq-tasins-projects.vercel.app/myCart`),
+        loader: () => fetch(`https://tech-xpress-server-hi68aljyl-tasins-projects.vercel.app/myCart`),
       },
       {
         path: "/detailsPage/:id",
         element: <PrivateRoute><DetailsPage /></PrivateRoute>,
-        loader: ({ params }) => fetch(`tech-xpress-server-pj28upzsq-tasins-projects.vercel.app/updateProduct/${params.id}`),
+        loader: ({ params }) => fetch(`https://tech-xpress-server-hi68aljyl-tasins-projects.vercel.app/updateProduct/${params.id}`),
       },
       {
         path: "/updateProducts/:id",
         element: <PrivateRoute><UpdateProduct></UpdateProduct></PrivateRoute>,
-        loader: ({ params }) => fetch(`tech-xpress-server-pj28upzsq-tasins-projects.vercel.app/updateProduct/${params.id}`),
+        loader: ({ params }) => fetch(`https://tech-xpress-server-hi68aljyl-tasins-projects.vercel.app/updateProduct/${params.id}`),
       },
       {
         path: "/brandProduct/:brandName",
         element: <BrandProduct />,
-        loader: ({ params }) => fetch(`tech-xpress-server-pj28upzsq-tasins-projects.vercel.app/addProduct/${params.brandName}`),
+        loader: ({ params }) => fetch(`https://tech-xpress-server-hi68aljyl-tasins-projects.vercel.app/addProduct/${params.brandName}`),
       },
     ],
   },

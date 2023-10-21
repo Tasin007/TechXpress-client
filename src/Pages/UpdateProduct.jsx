@@ -21,7 +21,7 @@ const UpdateProduct = () => {
 
         const product = { image, name, brandName, type, price, shortDescription, rating };
 
-        fetch(`tech-xpress-server-pj28upzsq-tasins-projects.vercel.app/updateProduct/${data._id}`, {
+        fetch(`https://tech-xpress-server-hi68aljyl-tasins-projects.vercel.app/updateProduct/${data._id}`, {
             method: 'PUT',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(product)

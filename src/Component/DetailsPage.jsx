@@ -11,7 +11,7 @@ const DetailsPage = () => {
 
   const handleAddToCart = () => {
     const sentCart = {userEmail, brandName, shortDescription, image, name, price, rating, type};
-       fetch(`tech-xpress-server-pj28upzsq-tasins-projects.vercel.app/myCart`, {
+       fetch(`https://tech-xpress-server-hi68aljyl-tasins-projects.vercel.app/myCart`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

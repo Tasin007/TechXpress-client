@@ -27,7 +27,7 @@ const AddProduct = () => {
     console.log(product);
 
     
-    fetch('tech-xpress-server-pj28upzsq-tasins-projects.vercel.app/addproduct', {
+    fetch('https://tech-xpress-server-hi68aljyl-tasins-projects.vercel.app/addproduct', {
       method: 'POST',
       headers: {
         'content-type': 'application/json',
