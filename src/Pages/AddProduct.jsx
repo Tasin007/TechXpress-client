@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import Swal from 'sweetalert2';
 
 const AddProduct = () => {
@@ -66,6 +66,7 @@ const AddProduct = () => {
         });
       });
   };
+
   return (
     <div className="mt-10">
       <h1 className="text-center text-2xl font-bold">ADD PRODUCT</h1>

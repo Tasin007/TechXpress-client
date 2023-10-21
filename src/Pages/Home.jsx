@@ -1,4 +1,3 @@
-// Home.jsx
 import { useState, useEffect } from "react";
 import Banner from "../Component/Banner";
 import Footer from "../Component/Footer";
@@ -13,7 +12,7 @@ const Home = () => {
   const [brands, setBrands] = useState([]);
 
   useEffect(() => {
-    fetch("/brands.json") // Replace with the actual path to your JSON file
+    fetch("/brands.json")
       .then((response) => response.json())
       .then((data) => setBrands(data))
       .catch((error) => console.error("Error fetching data:", error));
@@ -45,7 +44,7 @@ const Home = () => {
       
       <Carousel />
       <FAQ />
-      <Footer />
+      <Footer /> {/* resolved conflict */}
     </div>
   );
 };
