@@ -24,7 +24,7 @@ const Home = () => {
       <div className="max-w-7xl mx-auto my-10 grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 gap-4">
         {brands.map((brand, index) => (
           <Link to={`/brandProduct/${brand.name}`} key={brand._id}>
-          <div key={index} className="card w-96 bg-base-100 shadow-xl">
+          <div key={index} className="card w-96 bg-teal-50 shadow-xl">
             <figure className="px-10 pt-10">
               <img
                 src={brand.image}

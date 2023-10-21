@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-amber-50 p-4">
+    <nav className="bg-teal-50 p-4">
       <div className="flex flex-col md:flex-row items-center justify-between">
         <div className="flex items-center text-amber-950 mb-4 md:mb-0">
           <Link to="/" className="text-xl font-bold">
