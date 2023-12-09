@@ -1,6 +1,9 @@
 # My Tech Project
 
-##  Client Side Live Link :- 
+### Live Link
+
+Check out the live version of the project [here](https://tech-xpress-client.vercel.app/).
+
 
 
 - This is a technology and electronics website designed to provide information about modern tech products and gadgets. This Readme covers the client-side of the project. You can access the live client-side of the application at above.
